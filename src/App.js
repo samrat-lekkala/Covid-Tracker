@@ -7,7 +7,7 @@ import {
 } from "@material-ui/core";
 
 import React, { useEffect, useState } from "react";
-import "./app.css";
+import "./App.css";
 import "leaflet/dist/leaflet.css";
 import InfoBox from "./InfoBox";
 import Map from "./Map";
@@ -101,7 +101,7 @@ function App() {
             total={prettyPrintStat(
               countryInfo !== undefined && countryInfo.cases
             )}
-          ></InfoBox>
+          />
           <InfoBox
             active={casesType === "recovered"}
             onClick={(e) => setCasesType("recovered")}
@@ -112,7 +112,7 @@ function App() {
             total={prettyPrintStat(
               countryInfo !== undefined && countryInfo.recovered
             )}
-          ></InfoBox>
+          />
           <InfoBox
             isRed
             active={casesType === "deaths"}
@@ -124,7 +124,7 @@ function App() {
             total={prettyPrintStat(
               countryInfo !== undefined && countryInfo.deaths
             )}
-          ></InfoBox>
+          />
         </div>
         <Map
           casesType={casesType}
