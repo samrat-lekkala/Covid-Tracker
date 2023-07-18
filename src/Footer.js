@@ -6,6 +6,6 @@ const Footer = () => {
       <p>Created by Samrat Lekkala</p>
     </footer>
   );
-}
+} 
 
 export default Footer;
