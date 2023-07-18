@@ -15,6 +15,7 @@ import Table from "./Table";
 import { sortData } from "./util";
 import LineGraph from "./LineGraph";
 import { prettyPrintStat } from "./util";
+import Footer from "./Footer";
 function App() {
   const [countries, setCountries] = useState(["India", "USA", "RUSSIA"]);
   const [country, setCountry] = useState("worldwide");
@@ -72,7 +73,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <><div className="app">
       <div className="app__left">
         <div className="app__header">
           <h1>COVID-19 Tracker</h1>
@@ -143,7 +144,10 @@ function App() {
           </div>
         </CardContent>
       </Card>
+      
     </div>
+    <Footer/>
+    </>
   );
 }
 

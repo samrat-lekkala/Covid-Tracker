@@ -1,0 +1,13 @@
+/* Footer.css */
+
+.footer {
+    background-color: #f0f0f0; /* Set your desired background color */
+    padding: 10px; /* Add padding for better spacing */
+    text-align: center; /* Align text to the center */
+  }
+  
+  .footer p {
+    color: black; /* Set text color to black */
+    font-weight: bold; /* Apply bold font weight */
+  }
+  
